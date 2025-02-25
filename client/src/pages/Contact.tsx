@@ -17,7 +17,9 @@ const Contact = () => {
     const formData = new FormData(formRef.current as HTMLFormElement);
 
     try {
+      const VITE_API_URL="https://portfolio-xruw.onrender.com";
       const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
+      console.log("API URL:", import.meta.env.VITE_API_URL);
 
       const response = await fetch(`${API_URL}/api/email/send`, {
         method: "POST",
