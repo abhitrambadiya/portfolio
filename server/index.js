@@ -12,7 +12,7 @@ app.use(
     cors({
       origin: (origin, callback) => {
         const allowedOrigins = [
-          "http://localhost:5173",
+          // "http://localhost:5173",
           "https://abhitrambadiya.onrender.com"
         ];
         if (!origin || allowedOrigins.includes(origin)) {
