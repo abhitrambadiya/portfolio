@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import emailRoute from "./routes/emailRoute.js"; // Import the email route
 import { fileURLToPath } from "url";
+import path from "path";
 
 const app = express();
 app.use(express.json());
