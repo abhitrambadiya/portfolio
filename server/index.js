@@ -28,7 +28,7 @@ app.use(
 
 console.log("Loaded EMAIL_USER:", process.env.EMAIL_USER);
 
-app.use(cors({ origin: "http://localhost:5173" })); // Allow frontend access
+app.use(cors({ origin: "https://abhitrambadiya.onrender.com" })); // Allow frontend access
 // Allow all origins
 app.use(express.json());
 
