@@ -17,15 +17,18 @@ const Contact = () => {
     const formData = new FormData(formRef.current as HTMLFormElement);
 
     try {
-    const response = await fetch("http://localhost:5001/api/email/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: formData.get("name"),
-        email: formData.get("email"),
-        message: formData.get("message"),
-      }),
-    });
+      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
+
+      const response = await fetch(`${API_URL}/api/email/send`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }),
+      });
+      
 
     if (response.ok) {
       setSubmitStatus("success");
