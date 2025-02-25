@@ -9,12 +9,22 @@ app.use(express.json());
 
 // ✅ Set up CORS AFTER declaring 'app'
 app.use(
-  cors({
-    origin: ["http://localhost:5173", "https://abhitrambadiya.onrender.com"],
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
+    cors({
+      origin: (origin, callback) => {
+        const allowedOrigins = [
+          "http://localhost:5173",
+          "https://abhitrambadiya.onrender.com"
+        ];
+        if (!origin || allowedOrigins.includes(origin)) {
+          callback(null, true);
+        } else {
+          callback(new Error("Not allowed by CORS"));
+        }
+      },
+      methods: ["GET", "POST"],
+      allowedHeaders: ["Content-Type"],
+    })
+  );
 
 console.log("Loaded EMAIL_USER:", process.env.EMAIL_USER);
 
