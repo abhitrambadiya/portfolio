@@ -6,16 +6,11 @@ import emailRoute from "./routes/emailRoute.js"; // Import the email route
 
 
 // ✅ Allow requests from your deployed frontend
-const allowedOrigins = [
-    "http://localhost:5173",  // For local development
-    "https://abhitrambadiya.onrender.com", // Your deployed frontend
-  ];
-  
-  app.use(
+app.use(
     cors({
-      origin: allowedOrigins, // Allow only these origins
-      methods: "GET,POST", // Allow specific HTTP methods
-      allowedHeaders: "Content-Type", // Allow specific headers
+      origin: ["http://localhost:5173", "https://abhitrambadiya.onrender.com"],
+      methods: ["GET", "POST"],
+      allowedHeaders: ["Content-Type"],
     })
   );
 
