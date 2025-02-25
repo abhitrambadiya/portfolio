@@ -4,17 +4,18 @@ import express from "express";
 import cors from "cors";
 import emailRoute from "./routes/emailRoute.js"; // Import the email route
 
-
-// ✅ Allow requests from your deployed frontend
-app.use(
-    cors({
-      origin: ["http://localhost:5173", "https://abhitrambadiya.onrender.com"],
-      methods: ["GET", "POST"],
-      allowedHeaders: ["Content-Type"],
-    })
-  );
-
 const app = express();
+app.use(express.json());
+
+// ✅ Set up CORS AFTER declaring 'app'
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://abhitrambadiya.onrender.com"],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+
 console.log("Loaded EMAIL_USER:", process.env.EMAIL_USER);
 
 app.use(cors({ origin: "http://localhost:5173" })); // Allow frontend access
