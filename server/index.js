@@ -30,7 +30,7 @@ const __dirname = path.resolve(); // Required for ES module
 app.use(express.static("client/build")); // Adjust path if needed
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__client,"index.html"));
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });
 
 // ✅ Start the server
