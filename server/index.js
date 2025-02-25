@@ -38,14 +38,14 @@ app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // ✅ Serve React frontend
-app.use(express.static(path.join(__dirname, "../client/dist")));
+app.use(express.static(path.join(__dirname, "../client/")));
 
 // Use email route
 app.use("/api/email", emailRoute);
 
 // ✅ Catch-all route for React Router
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/", "index.html"));
 });
 
 const PORT = process.env.PORT || 5001;
