@@ -5,7 +5,7 @@ import { ExternalLink, Github, Code } from 'lucide-react';
 const Projects = () => {
   const [filter, setFilter] = useState('all');
 
-  const categories = ['all', 'web', 'mobile', 'editing' , 'design'];
+  const categories = ['all', 'web', 'mobile', 'editing'];
 
   const projects = [
     // {
