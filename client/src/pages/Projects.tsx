@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Code } from 'lucide-react';
+import illuminate from '../assets/illuminate.jpeg';
+import pitchingdeck from '../assets/pitchingdeck.jpg';
+import ecrreel from '../assets/ecrReel.jpg';
+import teamphoto from '../assets/teamphoto.jpeg';
+import ganpatiAagman from '../assets/ganpatiAagman.png';
+import editSphere from '../assets/editSphere.png';
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
@@ -8,16 +14,69 @@ const Projects = () => {
   const categories = ['all', 'web', 'mobile', 'editing'];
 
   const projects = [
-    // {
-    //   id: 1,
-    //   title: 'E-Commerce Platform',
-    //   category: 'web',
-    //   description: 'A full-featured e-commerce platform built with React and Node.js',
-    //   image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80',
-    //   tech: ['React', 'Node.js', 'MongoDB'],
-    //   liveUrl: 'https://example.com',
-    //   githubUrl: 'https://github.com',
-    // },
+    {
+      id: 1,
+      title: 'Team E-Cell 2024',
+      category: 'editing',
+      description: 'Meet the amazing crew behind our E-Cell! 🚀 With this team, the skys the limit, and were just getting started!',
+      image: teamphoto,
+      tech: ['Reels'],
+      liveUrl: 'https://www.instagram.com/reel/DAOozvjudDE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    },
+    {
+      id: 2,
+      title: 'ECR Comming Soon',
+      category: 'editing',
+      description: 'Attention FY students! 🎉 Get ready for an exciting journey into the world of innovation and entrepreneurship.Your adventure starts soon! 🌟',
+      image: ecrreel,
+      tech: ['Reels'],
+      liveUrl: 'https://www.instagram.com/reel/DBjO_WVzZHz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    },
+    {
+      id: 3,
+      title: 'Ganpati Aagman 2k24',
+      category: 'editing',
+      description: 'Ganpati Bappa Morya ♥️✨ All the happiness and joy cherished, we eagerly await his return. पुढच्या वर्षी लवकर या !!',
+      image: ganpatiAagman,
+      tech: ['Reels'],
+      liveUrl: 'https://www.instagram.com/reel/C_77umcO00u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    },
+    {
+      id: 4,
+      title: 'Extra Reels',
+      category: 'editing',
+      description: 'Reflecting my diverse interests and proactive engagement in extracurricular activities',
+      image: editSphere,
+      tech: ['Reels'],
+      liveUrl: 'https://drive.google.com/drive/folders/1-5fy48WXRaAnmp6p2vl8P2yZwGHEAYgP?usp=drive_link',
+    },
+    {
+      id: 5,
+      title: 'Illuminate AfterMovie',
+      category: 'editing',
+      description: 'Illuminate , a workshop designed to spark your entrepreneurial spirit! 💡✨',
+      image: illuminate,
+      tech: ['After Movie'],
+      liveUrl: 'https://www.instagram.com/reel/DCBRNjcgJzC/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
+    },
+    {
+      id: 6,
+      title: 'Pitching Deck',
+      category: 'editing',
+      description: '💡 Pitching Deck is an exciting opportunity where participants present their most innovative ideas in front of a panel of experts.',
+      image: pitchingdeck,
+      tech: ['After Movie'],
+      liveUrl: 'https://www.instagram.com/reel/DBKxdBkz5e4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    },
+    {
+      id: 7,
+      title: 'ECR On Day Reel',
+      category: 'editing',
+      description: 'The vibes are unmatched on Day 1 of the ECR event! Here’s to making memories that last forever.',
+      image: ecrreel,
+      tech: ['On Day Reel'],
+      liveUrl: 'https://www.instagram.com/reel/DCwkD0AzFNQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    },
     // {
     //   id: 2,
     //   title: 'Mobile Banking App',
@@ -140,14 +199,14 @@ const Projects = () => {
                     >
                       <ExternalLink className="w-5 h-5" />
                     </a>
-                    <a
+                    {/* <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 bg-white rounded-full hover:bg-indigo-600 hover:text-white transition-colors"
                     >
                       <Github className="w-5 h-5" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="p-6">
