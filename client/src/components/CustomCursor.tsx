@@ -4,13 +4,20 @@ import { motion } from 'framer-motion';
 const CustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+  const [isVisible, setIsVisible] = useState(window.innerWidth > 1024);
 
   useEffect(() => {
     const updateMousePosition = (e: MouseEvent) => {
+      if (window.innerWidth <= 1024) return;
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
+    const handleResize = () => {
+      setIsVisible(window.innerWidth > 1024);
+    };
+
     window.addEventListener('mousemove', updateMousePosition);
+    window.addEventListener('resize', handleResize);
 
     const handleHoverStart = () => setIsHovering(true);
     const handleHoverEnd = () => setIsHovering(false);
@@ -22,12 +29,15 @@ const CustomCursor = () => {
 
     return () => {
       window.removeEventListener('mousemove', updateMousePosition);
+      window.removeEventListener('resize', handleResize);
       document.querySelectorAll('a, button').forEach(element => {
         element.removeEventListener('mouseenter', handleHoverStart);
         element.removeEventListener('mouseleave', handleHoverEnd);
       });
     };
   }, []);
+
+  if (!isVisible) return null; // Disable cursor on smaller screens
 
   return (
     <>
