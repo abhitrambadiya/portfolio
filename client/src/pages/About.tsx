@@ -53,11 +53,11 @@ const About = () => {
 
   const experiences = [
     {
-      year: "2014 — 2021",
+      year: "2024 — 2025",
       title: "Film & Media Associate",
       company: "E-Cell KITCoEK",
       description:
-        "Kashmir, heavenly place, it was the first time I tought of capturing scenic shots and displaying it through social media. Currently have a very good experience with VN & CapCut and also pretty good hands with Final Cut Pro. Also have strated learning After-Effects and DaVinci to increases the level slowly and steadily.",
+        "Abhi is a valuable asset to the E-Cell student club as a video editor. The creativity and attention to detail consistently elevated our content, delivering engaging videos in time that exceeded expectations. Reliable and skilled, Abhi was a pleasure to work with and played a key role in our success. ~ E-Cell",
     },
   ];
 
