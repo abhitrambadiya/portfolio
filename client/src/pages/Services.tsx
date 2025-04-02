@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Palette, Globe, Database, Server, Lock, Smartphone, Video, FileSpreadsheet} from 'lucide-react';
+import { Code, Terminal, Database, Server, List, CoffeeIcon, Video } from 'lucide-react';
 const Services = () => {
   const services = [
     {
@@ -10,16 +10,10 @@ const Services = () => {
       features: ['React Js / MERN Stack', 'Performance Optimization'],
     },
     {
-      icon: Video,
-      title: 'Video Editing',
-      description: 'Passionate video editor dedicated to bringing stories to life through seamless editing and catchy visuals.',
-      features: ['Final Cut Pro', 'Capcut' ,'DaVinci & AE (Learning stage)'],
-    },
-    {
-      icon: Palette,
-      title: 'Graphics Design',
-      description: 'I have my basics cleared & I am pursuing a course to master the art of design graphics.',
-      features: ['Canva', 'Figma'],
+      icon: Server,
+      title: ' Backend Development',
+      description: 'Learning the entire modern back-end stack Node, Express, and the basics as well as advanced concepts of NodeJS in great detail.',
+      features: ['Node', 'Express Js'],
     },
     {
       icon: Database,
@@ -28,23 +22,29 @@ const Services = () => {
       features: ['MongoDB', 'Atlas & Mongoose'],
     },
     {
-      icon: Server,
-      title: ' Backend Development',
-      description: 'Learning the entire modern back-end stack Node, Express, and the basics as well as advanced concepts of NodeJS in great detail.',
-      features: ['Node', 'Express Js'],
+      icon: Terminal,
+      title: 'Python',
+      description: 'Passionate video editor dedicated to bringing stories to life through seamless editing and catchy visuals.',
+      features: ['NumPy & Pandas', 'Django & Flask'],
     },
     {
-      icon: FileSpreadsheet,
-      title: ' Excel / Spreadsheets',
-      description: 'Learned Microsoft Excel: Excel formulas and functions, Excel shortcuts and tips, Excel charts and graphs, etc etc.',
-      features: ['Basic formulas', 'Spreadsheet Management'],
+      icon: List,
+      title: 'DSA',
+      description: 'I have good understanding of data structures and algorithms for problem-solving',
+      features: ['Deisgn & Analysis', 'Algorithms'],
     },
-    // {
-    //   icon: Smartphone,
-    //   title: 'App Development',
-    //   description: 'Developing small cross-platform mobile applications for iOS and Android.',
-    //   features: ['Native Apps', 'React Native', 'App Store Deployment'],
-    // },
+    {
+      icon: CoffeeIcon,
+      title: ' Java',
+      description: 'Learning java programming with experience in building springboot backend frameworks.',
+      features: ['OOP in Java', 'Springboot'],
+    },
+    {
+      icon: Video,
+      title: 'Video Editing',
+      description: 'Passionate video editor dedicated to bringing stories to life through seamless editing and catchy visuals.',
+      features: ['Final Cut Pro', 'Capcut' ,'DaVinci & AE (Learning stage)'],
+    },
   ];
 
   return (
