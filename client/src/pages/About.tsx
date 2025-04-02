@@ -99,14 +99,8 @@ const About = () => {
                 My skills are further highlighted by my proficiency in English,
                 Hindi, Marathi, and Gujarati, allowing seamless interaction with
                 a broad spectrum of individuals.
-                <br />I possess certificates from events like Bodantara, speaker
-                sessions, and gaming tournaments, reflecting my diverse
-                interests and proactive engagement in extracurricular
-                activities. My current focus is on mastering game development 🎮
-                and exploring new technologies.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                <br />
                 Reaching out to new people and building networks is something I
                 genuinely enjoy. I am keen to connect with professionals and
                 peers who share similar interests or are open to exploring new
