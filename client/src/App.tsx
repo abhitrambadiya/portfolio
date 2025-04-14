@@ -8,13 +8,11 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-import CustomCursor from './components/CustomCursor';
 
 function App() {
   return (
     <Router>
       <div className="relative min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white">
-        <CustomCursor />
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>

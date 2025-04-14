@@ -15,7 +15,17 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 1,
+        id: 1,
+        title: 'Network Nexus',
+        category: 'web',
+        description: 'A professional alumni association web platform designed to bridge the gap between students, alumni, and the college administration.',
+        image: 'https://res.cloudinary.com/dfay6eu7m/image/upload/v1744637051/hxbbljhryltnmwfbp0ds.png',
+        tech: ['React', 'Tailwind CSS', 'Framer Motion', 'MERN stack'],
+        liveUrl: 'https://networknexus.netlify.app/',
+        githubUrl: 'https://github.com/BrainwaveBrigades/Network-Nexus',
+      },
+    {
+      id: 2,
       title: 'Team E-Cell 2024',
       category: 'editing',
       description: 'Meet the amazing crew behind our E-Cell! 🚀 With this team, the skys the limit, and were just getting started!',
@@ -24,7 +34,7 @@ const Projects = () => {
       liveUrl: 'https://www.instagram.com/reel/DAOozvjudDE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
-      id: 2,
+      id: 3,
       title: 'ECR Comming Soon',
       category: 'editing',
       description: 'Attention FY students! 🎉 Get ready for an exciting journey into the world of innovation and entrepreneurship.Your adventure starts soon! 🌟',
@@ -33,7 +43,7 @@ const Projects = () => {
       liveUrl: 'https://www.instagram.com/reel/DBjO_WVzZHz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Ganpati Aagman 2k24',
       category: 'editing',
       description: 'Ganpati Bappa Morya ♥️✨ All the happiness and joy cherished, we eagerly await his return. पुढच्या वर्षी लवकर या !!',
@@ -42,7 +52,7 @@ const Projects = () => {
       liveUrl: 'https://www.instagram.com/reel/C_77umcO00u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Extra Reels',
       category: 'editing',
       description: 'Reflecting my diverse interests and proactive engagement in extracurricular activities',
@@ -51,7 +61,7 @@ const Projects = () => {
       liveUrl: 'https://drive.google.com/drive/folders/1-5fy48WXRaAnmp6p2vl8P2yZwGHEAYgP?usp=drive_link',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Illuminate AfterMovie',
       category: 'editing',
       description: 'Illuminate , a workshop designed to spark your entrepreneurial spirit! 💡✨',
@@ -60,7 +70,7 @@ const Projects = () => {
       liveUrl: 'https://www.instagram.com/reel/DCBRNjcgJzC/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Pitching Deck',
       category: 'editing',
       description: '💡 Pitching Deck is an exciting opportunity where participants present their most innovative ideas in front of a panel of experts.',
@@ -69,7 +79,7 @@ const Projects = () => {
       liveUrl: 'https://www.instagram.com/reel/DBKxdBkz5e4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
-      id: 7,
+      id: 8,
       title: 'ECR On Day Reel',
       category: 'editing',
       description: 'The vibes are unmatched on Day 1 of the ECR event! Here’s to making memories that last forever.',
@@ -94,16 +104,6 @@ const Projects = () => {
     //   description: 'A comprehensive design system for web applications',
     //   image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80',
     //   tech: ['Figma', 'Storybook', 'React'],
-    //   liveUrl: 'https://example.com',
-    //   githubUrl: 'https://github.com',
-    // },
-    // {
-    //   id: 4,
-    //   title: 'Portfolio Website',
-    //   category: 'web',
-    //   description: 'A modern portfolio website with smooth animations',
-    //   image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
-    //   tech: ['React', 'Tailwind CSS', 'Framer Motion'],
     //   liveUrl: 'https://example.com',
     //   githubUrl: 'https://github.com',
     // },
